@@ -1,0 +1,27 @@
+/* Nest Nav */
+nav {
+  padding: 15px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $white;
+        font-family: $main-font;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+       &:not(:has(a)) {
+        color: $white;
+        font-family: $main-font;
+      }
+    }
+  }
+}
